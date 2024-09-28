@@ -1,24 +1,13 @@
-import Input from "@/components/common/Input";
-import Navbar from "@/components/common/navbar";
+import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 
-import {
-	NavigationMenu,
-	NavigationMenuContent,
-	NavigationMenuIndicator,
-	NavigationMenuItem,
-	NavigationMenuLink,
-	NavigationMenuList,
-	NavigationMenuTrigger,
-	NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
-import { Icon } from '@iconify/react';
-
-export default function Home() {
+export default function home() {
 	return (
 		<>
-			<div className="topNavbar">
-				<Navbar />
-			</div>
+			<h1>boa noite</h1>
+			<Button asChild>
+				<a href="/home/login">Sign-up</a>
+			</Button>
 		</>
 	);
 }
