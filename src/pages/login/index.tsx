@@ -1,15 +1,17 @@
+import React from "react";
 import "./style.css";
-import { UserIcon } from "hugeicons-react";
+import CustomInput from "@/components/common/input";
+import { Icon } from '@iconify/react';
 
-export default function login() {
+export default function Login() {
 	return (
 		<>
 			<title>ChatWithIT</title>
 			<form className="login">
-				<UserIcon size={80} className="user-icon" />
+				<Icon icon="hugeicons:user" width="80" height="80"/>
 				<h1 id="login__title">Sign-in</h1>
 				<label htmlFor="email">Email</label>
-				<input
+				<CustomInput
 					type="email"
 					className="input input__email"
 					id="emailInput"
@@ -22,6 +24,7 @@ export default function login() {
 					className="input input__password"
 					placeholder="An amazing password"
 				/>
+				<input type="checkbox"/>
 				<section className="buttons">
 					<button className="button sign__button" type="button">
 						Sign-in

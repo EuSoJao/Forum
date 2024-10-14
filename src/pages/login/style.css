@@ -1,22 +1,22 @@
-:root {
-    --fundo: rgb(255, 255, 255);
-    --cor-principal: #000000;       /* Preto */
-    --cor-secundaria: #4d4d4d;      /* Cinza muito escuro (quase preto) */
-    --cor-texto: #ffffff;            /* Branco para o texto */
-    --cor-elementos: #333333;        /* Cinza escuro para elementos */
-    --cor-button-hover: #444444;   /* Cinza um pouco mais claro para o hover */
-    
-}
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-div{
-    height: 100%;
+:root {
+    --main-color: #000000;
+    --secondary-color: #4d4d4d;
+    --text-color: #ffffff;
+    --element-color: #333333;
+    --button-hover-color: #444444;
+    
 }
 
 body {
     background-image: linear-gradient(116deg, rgba(232, 232, 232, 0.03) 0%, rgba(232, 232, 232, 0.03) 10%,rgba(14, 14, 14, 0.03) 10%, rgba(14, 14, 14, 0.03) 66%,rgba(232, 232, 232, 0.03) 66%, rgba(232, 232, 232, 0.03) 72%,rgba(44, 44, 44, 0.03) 72%, rgba(44, 44, 44, 0.03) 81%,rgba(51, 51, 51, 0.03) 81%, rgba(51, 51, 51, 0.03) 100%),linear-gradient(109deg, rgba(155, 155, 155, 0.03) 0%, rgba(155, 155, 155, 0.03) 23%,rgba(30, 30, 30, 0.03) 23%, rgba(30, 30, 30, 0.03) 63%,rgba(124, 124, 124, 0.03) 63%, rgba(124, 124, 124, 0.03) 73%,rgba(195, 195, 195, 0.03) 73%, rgba(195, 195, 195, 0.03) 84%,rgba(187, 187, 187, 0.03) 84%, rgba(187, 187, 187, 0.03) 100%),linear-gradient(79deg, rgba(254, 254, 254, 0.03) 0%, rgba(254, 254, 254, 0.03) 27%,rgba(180, 180, 180, 0.03) 27%, rgba(180, 180, 180, 0.03) 33%,rgba(167, 167, 167, 0.03) 33%, rgba(167, 167, 167, 0.03) 34%,rgba(68, 68, 68, 0.03) 34%, rgba(68, 68, 68, 0.03) 63%,rgba(171, 171, 171, 0.03) 63%, rgba(171, 171, 171, 0.03) 100%),linear-gradient(109deg, rgba(71, 71, 71, 0.03) 0%, rgba(71, 71, 71, 0.03) 3%,rgba(97, 97, 97, 0.03) 3%, rgba(97, 97, 97, 0.03) 40%,rgba(40, 40, 40, 0.03) 40%, rgba(40, 40, 40, 0.03) 55%,rgba(5, 5, 5, 0.03) 55%, rgba(5, 5, 5, 0.03) 73%,rgba(242, 242, 242, 0.03) 73%, rgba(242, 242, 242, 0.03) 100%),linear-gradient(271deg, rgba(70, 70, 70, 0.03) 0%, rgba(70, 70, 70, 0.03) 11%,rgba(178, 178, 178, 0.03) 11%, rgba(178, 178, 178, 0.03) 23%,rgba(28, 28, 28, 0.03) 23%, rgba(28, 28, 28, 0.03) 72%,rgba(152, 152, 152, 0.03) 72%, rgba(152, 152, 152, 0.03) 86%,rgba(43, 43, 43, 0.03) 86%, rgba(43, 43, 43, 0.03) 100%),linear-gradient(90deg, rgb(27, 27, 27),rgb(1, 1, 1));
     background-size: 100%;
     background-position: center top;
-    height: 100%;
     font-family: "Chakra Petch", sans-serif;
 }
 
@@ -33,7 +33,7 @@ html {
     gap: 10px;
     padding-top: 40px;
     flex-direction: column;
-    background-color: var(--cor-principal);
+    background-color: var(--main-color);
     margin: 50px auto;
     opacity: 80%;
     height: 500px;
@@ -49,7 +49,7 @@ html {
     border-radius: 5px;
     border: none;
     color: black;
-    background-color: var(--cor-secundaria);
+    background-color: var(--secondary-color);
     outline: none;
 }
 
@@ -62,14 +62,14 @@ html {
 }
 
 label {
-    color: var(--cor-secundaria);
+    color: var(--secondary-color);
 }
 
 .user-icon {
     justify-content: center;
     margin: 0 auto;
     height: 80px;
-    background-color: var(--cor-secundaria);
+    background-color: var(--secondary-color);
     border-radius: 10px;
     padding: 5px;
 }
@@ -86,13 +86,13 @@ label {
     border-radius: 5px;
     border: none;
     outline: none;
-    background-color: var(--cor-secundaria);
+    background-color: var(--secondary-color);
     text-align: center;
 }
 
 .button:hover {
-    background-color: var(--cor-button-hover);
-    color: var(--cor-secundaria);
+    background-color: var(--button-hover-color);
+    color: var(--secondary-color);
 }
 
 @keyframes loginBox {
