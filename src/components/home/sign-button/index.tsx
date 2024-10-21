@@ -24,7 +24,7 @@ const SignButton = ({logged, ...otherProps }: SignButtonProps) => {
 			</DialogTrigger>
 			<DialogContent className="sm:max-w-[425px]">
 				<DialogHeader>
-					<DialogTitle>Edit profile</DialogTitle>
+					<DialogTitle>Sign-in</DialogTitle>
 					<DialogDescription>
 						Sign-in to your account or{" "}
 						<a href="/" className="text-blue-500">
